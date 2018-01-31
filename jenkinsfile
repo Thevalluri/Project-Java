@@ -10,20 +10,6 @@
                  sh 'ant -f build.xml -v'
           
          }    
-      }
-     
-      stage('deploy') {
-         steps {
-            // deploy
-
-         }
-      }
-   }
-    
-   
-    post {
-      always {
-        archiveArtifacts artifacts: 'dist/*.jar', fingerprint: true
-      } 
+     } 
     }
   }
