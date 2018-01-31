@@ -17,12 +17,12 @@
         <delete dir="${report.dir}" />
     </target>
 
-    <target name="makedir" depends="clean">
+    <target name="makedir">
         <mkdir dir="${build.dir}" />
         <mkdir dir="${report.dir}" />
     </target>
 
-    <target name="compile" depend="makedir">
+    <target name="compile">
         <javac srcdir="${src.dir}" destdir="${build.dir}">
           <classpath refid="class.path" />
         </javac>
