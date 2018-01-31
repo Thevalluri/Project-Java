@@ -22,7 +22,7 @@
         <mkdir dir="${dist.dir}" />
     </target>
 
-    <target name="compile" depends="clean, makedir"> 
+    <target name="compile"> 
         <javac srcdir="${src.dir}" destdir="${build.dir}">
           <classpath refid="class.path" />
         </javac>
@@ -30,7 +30,7 @@
 
     <target name="jar" depends="compile">
         <mkdir dir="${jar.dir}"/>
-        <jar destfile="${dist.dir}/rectangle.jar" basedir="${build.dir}">
+        <jar destfile="${dist.dir}/rectangle.${env.BUILD_NUMBER}.jar" basedir="${build.dir}">
             <manifest>
                 <attribute name="Main-Class" value="rectangulator" />
             </manifest>
