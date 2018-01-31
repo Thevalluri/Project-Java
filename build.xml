@@ -23,7 +23,7 @@
         <mkdir dir="${dist.dir}" />
     </target>
 
-    <target name="compile"> depends="clean, makedir">
+    <target name="compile"> 
         <javac srcdir="${src.dir}" destdir="${buid.dir}">
           <classpath refid="class.path" />
         </javac>
