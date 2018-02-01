@@ -29,7 +29,6 @@
     </target>
 
     <target name="jar" depends="compile">
-        <mkdir dir="${jar.dir}"/>
         <jar destfile="${dist.dir}/rectangle.${env.BUILD_NUMBER}.jar" basedir="${build.dir}">
             <manifest>
                 <attribute name="Main-Class" value="rectangulator" />
