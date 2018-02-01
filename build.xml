@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 
-<project name="Rectangle-Build" basedir="." default="main">
+<project name="rectangle-build" basedir="." default="main">
   <property environment="env"/>
     
     <property name="src.dir"    location="src" />
